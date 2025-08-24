@@ -1,28 +1,28 @@
 import React from "react";
 
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import Lucide icons
+// import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import Lucide icons
 import { Link } from "react-router-dom";
 import { Container } from "@/components/container";
 import { MainRoutes } from "@/lib/helpers";
 
-interface SocialLinkProps {
-  href: string;
-  icon: React.ReactNode;
-  hoverColor: string;
-}
+// interface SocialLinkProps {
+//   href: string;
+//   icon: React.ReactNode;
+//   hoverColor: string;
+// }
 
-const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, hoverColor }) => {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`hover:${hoverColor}`}
-    >
-      {icon}
-    </a>
-  );
-};
+// const SocialLink: React.FC<SocialLinkProps> = ({ href, icon, hoverColor }) => {
+//   return (
+//     <a
+//       href={href}
+//       target="_blank"
+//       rel="noopener noreferrer"
+//       className={`hover:${hoverColor}`}
+//     >
+//       {icon}
+//     </a>
+//   );
+// };
 
 interface FooterLinkProps {
   to: string;
@@ -86,9 +86,9 @@ export const Footer = () => {
           </div>
 
           {/* Fourth Column: Address and Social Media */}
-          <div>
+          {/* <div>
             <h3 className="font-bold text-lg mb-4">Contact Us</h3>
-            <p className="mb-4">123 AI Street, Tech City, 12345</p>
+            <p className="mb-4"></p>
             <div className="flex gap-4">
               <SocialLink
                 href="https://facebook.com"
@@ -111,7 +111,7 @@ export const Footer = () => {
                 hoverColor="text-blue-700"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
     </div>
